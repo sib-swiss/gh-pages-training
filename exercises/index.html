@@ -1,0 +1,779 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/SIB_logo.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Exercises - Github pages for teaching</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#forking-and-cloning-the-template" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Github pages for teaching" class="md-header-nav__button md-logo" aria-label="Github pages for teaching">
+      
+  <img src="../assets/images/SIB_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Github pages for teaching
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Exercises
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/GeertvanGeest/course_website_template" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GeertvanGeest/course_website_template
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Github pages for teaching" class="md-nav__button md-logo" aria-label="Github pages for teaching">
+      
+  <img src="../assets/images/SIB_logo.svg" alt="logo">
+
+    </a>
+    Github pages for teaching
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/GeertvanGeest/course_website_template" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GeertvanGeest/course_website_template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../precourse/" class="md-nav__link">
+        Precourse preparations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_schedule/" class="md-nav__link">
+        Course schedule
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exercises
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Exercises
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forking-and-cloning-the-template" class="md-nav__link">
+    Forking and cloning the template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serving-a-website-locally" class="md-nav__link">
+    Serving a website locally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-structure" class="md-nav__link">
+    The file structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-website-infrastructure" class="md-nav__link">
+    Setting up the website infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referring-to-the-right-repo" class="md-nav__link">
+    Referring to the right repo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-syntax" class="md-nav__link">
+    Markdown syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-markdown-exercise" class="md-nav__link">
+    My markdown exercise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-features-of-mkdocs-material" class="md-nav__link">
+    Additional features of Mkdocs material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#byo-workshop" class="md-nav__link">
+    BYO workshop
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forking-and-cloning-the-template" class="md-nav__link">
+    Forking and cloning the template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serving-a-website-locally" class="md-nav__link">
+    Serving a website locally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-structure" class="md-nav__link">
+    The file structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-website-infrastructure" class="md-nav__link">
+    Setting up the website infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referring-to-the-right-repo" class="md-nav__link">
+    Referring to the right repo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-syntax" class="md-nav__link">
+    Markdown syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-markdown-exercise" class="md-nav__link">
+    My markdown exercise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-features-of-mkdocs-material" class="md-nav__link">
+    Additional features of Mkdocs material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#byo-workshop" class="md-nav__link">
+    BYO workshop
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Exercises</h1>
+                
+                <h2 id="forking-and-cloning-the-template">Forking and cloning the template</h2>
+<p>Go to <a href="https://github.com/sib-swiss/course_website_template">https://github.com/sib-swiss/course_website_template</a>, and click on <strong>Use this template</strong>:</p>
+<figure>
+  <img src="../assets/images/use_this_as_template.png" width="500"/>
+</figure>
+
+<p>Choose the namespace in which you want to use the website template, choose a name, and initiate the new repository by finalising with <strong>Create repository from template</strong>:</p>
+<figure>
+  <img src="../assets/images/choose_owner.png" width="500"/>
+</figure>
+
+<p>Now you can find the new repository at <code>https://github.com/[NAMESPACE]/[REPONAME]</code>. In order to clone the repository to a local directory, click on <strong>Code</strong> and copy the github address that you can use for cloning to your clipboard:</p>
+<figure>
+  <img src="../assets/images/clone_repo.png" width="500"/>
+</figure>
+
+<p>After that, you open a terminal (e.g. Windows Powershell or your favourite terminal) <code>cd</code> to a directory you want to clone your repository in (e.g. to <code>C:\Users\myname\Documents</code>) and type:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/<span class="o">[</span>NAMESPACE<span class="o">]</span>/<span class="o">[</span>REPONAME<span class="o">]</span>.git <span class="c1"># the last part can be pasted from github</span>
+</code></pre></div>
+
+<h2 id="serving-a-website-locally">Serving a website locally</h2>
+<p>In order to work on your website, it is convenient if you can serve it locally and directly see the effects of your work. In order to do that use the terminal to go into the repository directory, (e.g. <code>C:\Users\myname\Documents\reponame</code>) and type:</p>
+<div class="highlight"><pre><span></span><code>mkdocs serve
+</code></pre></div>
+
+<p>Now type <code>http://localhost:8000</code> in your favourite browser, and your website should be visible.</p>
+<p>Open the file <code>index.md</code> in your favourite text editor. Add some text to the page (e.g. <code>hello world!</code>) and save the file. See whether your changes are passed to the locally served website.</p>
+<div class="admonition note">
+<p class="admonition-title">Stopping <code>mkdocs serve</code></p>
+<p>After you have finished working on your website you will have to stop the serving process. Otherwise, it will continue in the background and keep port 8000 (and CPU) occupied. Stop the serving process with <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>C</kbd></span> .</p>
+</div>
+<h2 id="the-file-structure">The file structure</h2>
+<p>The total file structure of the template looks like this:</p>
+<div class="highlight"><pre><span></span><code>.
+├── LICENCE
+├── README.md
+├── docs
+│   ├── assets
+│   │   └── images
+│   │       ├── SIB_logo.svg
+│   │       ├── reactions_zoom.png
+│   │       ├── reply_in_thread.png
+│   │       └── zoom_icons.png
+│   ├── course_schedule.md
+│   ├── exercises.md
+│   ├── index.md
+│   ├── precourse.md
+│   └── stylesheets
+│       └── extra.css
+└── mkdocs.yml
+
+4 directories, 12 files
+</code></pre></div>
+
+<p>The main directory contains:</p>
+<ul>
+<li><code>LICENCE</code>: a licence file (in this case cc-by-4.0)</li>
+<li><code>README.md</code>: the readme displayed at the github repository</li>
+<li><code>docs</code>: a directory with all website content, including:<ul>
+<li><code>assets</code>: a directory everything that is not directly rendered (e.g. images, pdfs)</li>
+<li>files ending with <code>*.md</code>: the actual markdown files that are rendered into html</li>
+<li><code>stylesheets</code>: a directory with <code>.css</code> file(s) for defining the website style format</li>
+</ul>
+</li>
+<li><code>mkdocs.yml</code>: a YAML file that is used by <code>mkdocs</code> in which you specify:<ul>
+<li>Website structure</li>
+<li>Meta information</li>
+<li>Plugins</li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-the-website-infrastructure">Setting up the website infrastructure</h2>
+<p>Open <code>mkdocs.yml</code> in your favourite text editor. Have a look at the first part:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Course template</span>
+
+<span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Precourse preparations</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">precourse.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Course schedule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">course_schedule.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Exercises</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exercises.md</span>
+</code></pre></div>
+
+<p>The first line (<code>site_name</code>) let&rsquo;s you change website name. Change it to something that makes sense to you, and check whether it has changed in the locally hosted site.</p>
+<p>With the part named <code>nav</code>, you can change the website structure and with that navigation. The file <code>index.md</code> should always be there, this is the &lsquo;homepage&rsquo;.</p>
+<p>Now we will generate a new page that is a subchapter of <em>Exercises</em>. In order to do so, follow the following steps:</p>
+<ul>
+<li>Generate a directory within the directory <code>docs</code> called <code>exercises</code></li>
+<li>Within the <code>exercises</code> directory generate a new file called <code>exercises_day1.md</code></li>
+<li>Adjust the <code>nav</code> part of <code>mkdocs.yml</code> like so:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Precourse preparations</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">precourse.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Course schedule</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">course_schedule.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Exercises</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">Day 1</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exercises/exercises_day1.md</span>
+</code></pre></div>
+
+<p>Now a new collapsible menu will appear, containing your new page.</p>
+<h2 id="referring-to-the-right-repo">Referring to the right repo</h2>
+<p>In <code>mkdocs.yml</code> have a look at the repository part:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Repository</span>
+<span class="nt">repo_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sib-swiss/course_website_template</span>
+<span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/sib-swiss/course_website_template</span>
+</code></pre></div>
+
+<p>The course website is now hosted at your own repository. Therefore, change the repository name and url according to your own.</p>
+<h2 id="markdown-syntax">Markdown syntax</h2>
+<p>You can use general github markdown syntax in order to generate a formatted html page. Have a look <a href="https://guides.github.com/features/mastering-markdown/">here</a>.</p>
+<p>Now, convert the rendered text below into markdown. Add your markdown text to the file <code>exercises_day1.md</code> and see whether you get the expected result while you type.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Rendered markdown</label><div class="tabbed-content">
+<h3 id="my-markdown-exercise">My markdown exercise</h3>
+<p>With plain markdown you can highlight in two ways:</p>
+<ol>
+<li><em>Italic</em></li>
+<li><strong>Bold</strong></li>
+</ol>
+<p>You can add a link to your favourite <a href="https://www.sib.swiss/">website</a>. Or add an image from that website (find it at <code>https://www.sib.swiss/images/banners/banner_research_infrastructure.jpg</code>):</p>
+<p><img alt="" src="https://www.sib.swiss/images/banners/banner_research_infrastructure.jpg" /></p>
+<p>You can also add a local image (this one is stored in <code>../assets/images/zoom_icons.png</code>):</p>
+<p><img alt="" src="../assets/images/zoom_icons.png" /></p>
+<p>Sharing a code is easy, inline you refer to code like this: <code>pip install mkdocs</code>. But often it&rsquo;s more convenient in a code block, e.g. with shell highlighting:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">FILE</span><span class="o">=</span>my_genes.csv
+cat <span class="nv">$FILE</span> <span class="p">|</span> cut -f <span class="m">1</span>,2 -d <span class="s1">&#39;,&#39;</span>
+</code></pre></div>
+
+<p>Or with R highlighting for example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&#39;my_genes.csv&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Answer</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="gu">###</span> My markdown exercise
+
+With plain markdown you can highlight in two ways:
+
+<span class="k">1.</span> <span class="ge">*Italic*</span>
+<span class="k">2.</span> <span class="gs">**Bold**</span>
+
+You can add a link to your favourite [<span class="nt">website</span>](<span class="na">https://www.sib.swiss/</span>).
+Or add an image from that website (find it at <span class="sb">`https://www.sib.swiss/images/banners/banner_research_infrastructure.jpg`</span>):
+
+![](https://www.sib.swiss/images/banners/banner_research_infrastructure.jpg)
+
+You can also add a local image (this one is stored in <span class="sb">`../assets/images/zoom_icons.png`</span>):
+
+![](../assets/images/zoom_icons.png)
+
+Sharing a code is easy, inline you refer to code like this: <span class="sb">`pip install mkdocs`</span>.
+But often it&#39;s more convenient in a code block, e.g. with shell highlighting:
+
+<span class="s">```sh</span>
+<span class="nv">FILE</span><span class="o">=</span>my_genes.csv
+cat <span class="nv">$FILE</span> <span class="p">|</span> cut -f <span class="m">1</span>,2 -d <span class="s1">&#39;,&#39;</span>
+<span class="s">```</span>
+
+Or with R highlighting for example:
+
+<span class="s">```r</span>
+<span class="n">df</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&#39;my_genes.csv&#39;</span><span class="p">)</span>
+<span class="s">```</span>
+</code></pre></div>
+
+</div>
+</div>
+<h2 id="additional-features-of-mkdocs-material">Additional features of Mkdocs material</h2>
+<p>Some additional features are very convenient for generating a website for teaching. For example <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/">admonitions</a>:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>!!! warning
+    Do not overcommit the server!
+</code></pre></div>
+
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">output</label><div class="tabbed-content">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not overcommit the server!</p>
+</div>
+</div>
+</div>
+<p>Also very convenient can be <a href="https://squidfunk.github.io/mkdocs-material/reference/content-tabs/">content tabs</a>:</p>
+<p><em>code:</em></p>
+<div class="highlight"><pre><span></span><code>=== &quot;R&quot;
+    Generating a vector of integers:
+    ```r
+    a &lt;- c(5,4,3,2,1)
+    ```
+=== &quot;python&quot;
+    Generating a list of integers:
+    ```python
+    a = [5,4,3,2,1]
+    ```
+</code></pre></div>
+
+<p><em>output:</em></p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">R</label><div class="tabbed-content">
+<p>Generating a vector of integers:
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">1</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">python</label><div class="tabbed-content">
+<p>Generating a list of integers:
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></p>
+</div>
+</div>
+<p>Mkdocs material comes with a very wide range of <a href="https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/">emoticons and icons</a>. Use the search field in the link to search for icons. Here&rsquo;s an example:</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Write an e-mail :material-send:, add a pdf :material-file-pdf: and wait :clock1:
+</code></pre></div>
+
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">output</label><div class="tabbed-content">
+<p>Write an e-mail <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></span>, add a pdf <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2m4.1 9.4c-.02.04-.29 1.76-2.1 4.69 0 0-3.5 1.82-2.67 3.18.67 1.08 2.32-.04 3.74-2.68 0 0 1.82-.64 4.24-.82 0 0 3.86 1.73 4.39-.11.52-1.86-3.06-1.44-3.7-1.25 0 0-2-1.35-2.5-3.21 0 0 1.14-3.95-.61-3.9-1.75.05-1.09 3.13-.79 4.1m.81 1.04c.03.01.47 1.21 1.89 2.46 0 0-2.33.46-3.39.9 0 0 1-1.73 1.5-3.36m3.93 2.72c.58-.16 2.33.15 2.26.48-.06.33-2.26-.48-2.26-.48M7.77 17c-.53 1.24-1.44 2-1.67 2-.23 0 .7-1.6 1.67-2m3.14-6.93c0-.07-.36-2.2 0-2.15.54.08 0 2.08 0 2.15z"/></svg></span> and wait <img alt="🕐" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f550.svg" title=":clock1:" /></p>
+</div>
+</div>
+<p>You can make a <a href="https://squidfunk.github.io/mkdocs-material/reference/buttons/">button</a> like this:</p>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>[<span class="nt">Download the presentation</span>](<span class="na">../assets/pdf/sequencing_technologies.pdf</span>){: .md-button }
+</code></pre></div>
+
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">output</label><div class="tabbed-content">
+<p><a class="md-button" href="../assets/pdf/sequencing_technologies.pdf">Download the presentation</a></p>
+</div>
+</div>
+<p>You can also add an icon to a button:</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>[<span class="nt">:fontawesome-solid-file-pdf: Download the presentation</span>](<span class="na">../assets/pdf/sequencing_technologies.pdf</span>){: .md-button }
+</code></pre></div>
+
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">output</label><div class="tabbed-content">
+<p><a class="md-button" href="../assets/pdf/sequencing_technologies.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg></span> Download the presentation</a></p>
+</div>
+</div>
+<p>Lastly, you can incorporate <code>html</code>. This can particularly be convenient if you want to control the size of images.</p>
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../assets/images/zoom_icons.png&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;300&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../assets/images/zoom_icons.png&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</code></pre></div>
+
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">output</label><div class="tabbed-content">
+<p><figure>
+  <img src="../assets/images/zoom_icons.png" width="300"/>
+</figure></p>
+<p><figure>
+  <img src="../assets/images/zoom_icons.png" width="100"/>
+</figure></p>
+</div>
+</div>
+<h2 id="byo-workshop">BYO workshop</h2>
+<p>If you have brought your own course material, now you can start with generating a page containing your own course material</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../course_schedule/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Course schedule
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
