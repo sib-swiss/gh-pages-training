@@ -775,14 +775,18 @@ Or with R highlighting for example:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Anything that is added to the file <code>.gitignore</code> is not added to the git repository. You have to add such files/directories only once. You can of course also open <code>.gitignore</code> in your favourite text editor and modify it in there. </p>
+<p>Anything that is added to the file <code>.gitignore</code> is not added to the git repository. You have to add such files/directories only once. You can of course also open <code>.gitignore</code> in your favourite text editor and modify it in there.</p>
 </div>
 <p>Now, you can commit your changes to your local repository like this:</p>
 <div class="highlight"><pre><span></span><code>git commit -m <span class="s1">&#39;short description&#39;</span>
 </code></pre></div>
 
-<p>And add your commit to the repository:</p>
+<p>Add your commit to the repository:</p>
 <div class="highlight"><pre><span></span><code>git add --all
+</code></pre></div>
+
+<p>And finally push it to the remote:</p>
+<div class="highlight"><pre><span></span><code>git push
 </code></pre></div>
                 
               
