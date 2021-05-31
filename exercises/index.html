@@ -350,6 +350,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pushing-to-a-remote-repository" class="md-nav__link">
+    Pushing to a remote repository
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -459,6 +466,13 @@
         <li class="md-nav__item">
   <a href="#host-the-website-at-githubio" class="md-nav__link">
     Host the website at github.io
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushing-to-a-remote-repository" class="md-nav__link">
+    Pushing to a remote repository
   </a>
   
 </li>
@@ -754,6 +768,22 @@ Or with R highlighting for example:
 </code></pre></div>
 
 <p>It will become available at <code>[NAMESPACE].github.io/[REPONAME]</code>. This can take more than an hour if you are deploying for the first time. The next time you update your website, it will usually take less then a minute.</p>
+<h2 id="pushing-to-a-remote-repository">Pushing to a remote repository</h2>
+<p>The website html is created in a directory called <code>site</code> inside your repository directory. This directory is used to locally host the website, but usually you don&rsquo;t want to push it to your master branch. Therefore add it to <code>.gitignore</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;site&quot;</span> &gt;&gt; .gitignore
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Anything that is added to the file <code>.gitignore</code> is not added to the git repository. You have to add such files/directories only once. You can of course also open <code>.gitignore</code> in your favourite text editor and modify it in there. </p>
+</div>
+<p>Now, you can commit your changes to your local repository like this:</p>
+<div class="highlight"><pre><span></span><code>git commit -m <span class="s1">&#39;short description&#39;</span>
+</code></pre></div>
+
+<p>And add your commit to the repository:</p>
+<div class="highlight"><pre><span></span><code>git add --all
+</code></pre></div>
                 
               
               
