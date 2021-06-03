@@ -283,6 +283,15 @@
 <li><code>mkdocs</code>. Instructions <a href="https://www.mkdocs.org/#installation">here</a></li>
 <li><code>mkdocs-material</code>. Instructions <a href="https://squidfunk.github.io/mkdocs-material/getting-started/#installation">here</a></li>
 </ul>
+<p>!!! note <code>python3</code> and <code>pip3</code>
+    Depending on the type of installation of <code>python</code> and <code>pip</code> you might have to call them as <code>python3</code> and <code>pip3</code> respectively. You can change this behaviour by adding to your <code>.bashrc</code> (or any other file that is sourced at shell start up):</p>
+<div class="codehilite"><pre><span></span><code>```sh
+alias python=python3
+alias pip=pip3
+```
+</code></pre></div>
+
+
 <p>For the impatient (that already have a <code>git</code>, <code>python</code> and <code>pip</code> installation):</p>
 <div class="highlight"><pre><span></span><code>pip install mkdocs
 pip install mkdocs-material
